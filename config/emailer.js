@@ -411,7 +411,7 @@ const plantilla = `
                                                                     <p
                                                                         style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;line-height:23px;color:#555555;font-size:15px">
                                                                         Soy Jose Parrilla, Desarrollador de Software profesional. 
-                                                                        Trabajo para una de las cinco Multinacionales más importantes del Sector IT desarrollando para clientes de la talla como BBVA, Iberdrola, etc...
+                                                                        Trabajo para una de las cinco Multinacionales más importantes del Sector IT desarrollando para clientes de la talla de BBVA, Iberdrola, etc...
                                                                         <br>Mi objetivo es ayudarte y asesorarte en tu carrera ya sea en tus estudios, 
                                                                         inicios o que te aventures a un cambio en tu carrera.
                                                                         <br>
@@ -717,7 +717,7 @@ const sendMail = async ( registro ) => {
     const info = await transporter.sendMail({
         from: '"Jose Parrilla Dev" <jose@gmail.com>',
         to: [`${ registro.email }`],
-        subject: `Welcome to my World, ${ registro.nombre }!!`,
+        subject: `Bienvenid@ a Jose Parrilla Academy, ${ registro.nombre }!!`,
         html:plantilla 
     });
 
