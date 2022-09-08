@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const app = express();
 
-
+const puerto = 'https://www.joseparrilla.es'
 
 
 //directorio publico
@@ -33,7 +33,7 @@ app.get( '*', (req, res) => {
 } )
 
 
-app.listen( process.env.PORT, () => {
-    console.log(`Servidor corriendo en puerto ${ process.env.PORT }`);
+app.listen( puerto, () => {
+    console.log(`Servidor corriendo en puerto ${ puerto } }`);
     
 } )
