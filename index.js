@@ -1,4 +1,4 @@
-const express = require('express')();
+const express = require('express');
 const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
@@ -7,8 +7,7 @@ require('dotenv').config();
 
 const app = express();
 
-const puerto = 'https://www.joseparrilla.es'
-
+const port = process.env.PORT || 3000;
 
 //directorio publico
 
@@ -33,7 +32,7 @@ app.get( '*', (req, res) => {
 } )
 
 
-app.listen( process.env.PORT, () => {
-    console.log(`Servidor corriendo en puerto ${ process.env.PORT } }`);
+app.listen( port, () => {
+    console.log(`Servidor corriendo en puerto ${ port }`);
     
 } )
